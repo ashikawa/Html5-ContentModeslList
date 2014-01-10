@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>Content Models Tag List</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+<link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+<section>
+    <header>
+        <h1>Content Models Tag List</h1>
+    </header>
+
+    <ul>
+        <li>from <a href="http://www.w3.org/html/wg/drafts/html/master/dom.html#content-models">W3C  Content models</a>.</li>
+        <li><a href="./data/content.csv">download csv</a></li>
+    </ul>
+
+    <table class="table table-bordered tablesorter">
+        <thead>
+            <tr>
+                <th>Tag</th>
+                <th>Metadata</th>
+                <th>Flow</th>
+                <th>Phrasing</th>
+                <th>Sectioning</th>
+                <th>Heading</th>
+                <th>Interactive</th>
+                <th>Embedded</th>
+            </tr>
+        </thead>
+        <tbody id="tagList">
+<script id="tableTmpl" type="text/x-jquery-tmpl"> 
+            <tr>
+                <th>${Tag}</th>
+                <td>${Metadata}</td>
+                <td>${Flow}</td>
+                <td>${Phrasing}</td>
+                <td>${Sectioning}</td>
+                <td>${Heading}</td>
+                <td>${Interactive}</td>
+                <td>${Embedded}</td>
+            </tr>
+</script> 
+        </tbody>
+    </table>
+
+</section>
+</div>
+<a href="https://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"></a>
+<script src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.8/require.min.js"></script>
+<script src="./js/main.js"></script>
+</body>
+</html>
